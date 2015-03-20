@@ -37,4 +37,4 @@ gulp.task('watch', function () {
   gulp.watch(['./public/**/*.*'], ['reload']);
 });
 
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', ['build', 'connect', 'watch']);
