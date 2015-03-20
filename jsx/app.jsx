@@ -24,13 +24,15 @@ var App = React.createClass({
 
   render: function() {
     return (
-      <div></div>
+      <div>
+        <h1>Hello, World</h1>
+      </div>
     );
   }
 });
 
 var stores  = {
-  SomeStore: new Store()
+  SomeStore: new SomeStore()
 };
 var flux = new Fluxxor.Flux(stores, actions);
 
